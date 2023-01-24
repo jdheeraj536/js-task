@@ -1,0 +1,13 @@
+.count{
+    display: flex;
+    flex-direction: row;
+    margin: auto; 
+}
+h2{
+    margin: 20px;
+}
+small{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
