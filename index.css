@@ -11,3 +11,42 @@ small{
     justify-content: center;
     align-items: center;
 }
+
+/* --------------------Image Slider-------------------- */
+
+.slider{
+    width: 600px;
+    height: 300px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    /* animation: images 20s linear infinite; */
+}
+/* @keyframes images {
+    0%{
+        background-image: url("https://picsum.photos/id/238/600/300");
+    }
+    25%{
+        background-image: url("https://picsum.photos/id/239/600/300");
+    }
+    50%{
+        background-image: url("https://picsum.photos/id/237/600/300");
+    }
+    75%{
+        background-image: url("https://picsum.photos/id/240/600/300");
+    }
+    100%{
+        background-image: url("https://picsum.photos/id/241/600/300");
+    }
+} */
+.slider img{
+    position: absolute;
+    transition: 1s;
+    
+}
+
+button{
+position: relative;
+left: 15%;
+top: 10px;
+}

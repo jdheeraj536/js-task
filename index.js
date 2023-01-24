@@ -26,3 +26,36 @@ function updateCountDown(){
 }
 
 setInterval(updateCountDown,1000);
+
+
+/*  --------------------  Slider Image-------------- */
+const Slides = document.querySelectorAll('.slide');
+var counter = 0;
+
+Slides.forEach(
+    (slide, index) =>{
+         slide.style.left = `${index * 100}%`
+    }
+);
+
+const goNext = () => {
+    if (counter < Slides.length - 1) {
+    counter++;
+    slideImage();
+    }
+    };
+    const goPrev = () => {
+    if (counter != 0) {
+    counter--;
+    slideImage();
+    }
+    };
+
+const slideImage =() =>{
+    Slides.forEach(
+        (slide)=>{
+            slide.style.transform = `translateX(-${counter * 100}%)`
+        }
+    )
+}
+
