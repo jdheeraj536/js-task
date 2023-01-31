@@ -29,8 +29,8 @@
             <h2 id="seconds">00</h2>
             <small>Second</small>
         </div>
-</div>
-<br>
+    </div>
+    <br>
 
     <h1>Q2. Create a Slider</h1>
 
@@ -44,6 +44,53 @@
     <button onclick="goPrev()">Prev</button>
     <button onclick="goNext()">Next</button>
 
+
+    <table id="table">
+        <tr>
+          <th>Rate</th>
+          <th>Quantity</th>
+          <th>SGST</th>
+          <th>CGST</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td><input type="number" id="rate1" oninput="calculateTotal(1)"></td>
+          <td><input type="number" id="quantity1" oninput="calculateTotal(1)"></td>
+          <td><input type="number" id="sgst1" oninput="calculateTotal(1)"></td>
+          <td><input type="number" id="cgst1" oninput="calculateTotal(1)"></td>
+          <td><span id="total1"></span></td>
+        </tr>
+        <tr>
+          <td><input type="number" id="rate2" oninput="calculateTotal(2)"></td>
+          <td><input type="number" id="quantity2" oninput="calculateTotal(2)"></td>
+          <td><input type="number" id="sgst2" oninput="calculateTotal(2)"></td>
+          <td><input type="number" id="cgst2" oninput="calculateTotal(2)"></td>
+          <td><span id="total2"></span></td>
+        </tr>
+        <tr>
+          <td><input type="number" id="rate3" oninput="calculateTotal(3)"></td>
+          <td><input type="number" id="quantity3" oninput="calculateTotal(3)"></td>
+          <td><input type="number" id="sgst3" oninput="calculateTotal(3)"></td>
+          <td><input type="number" id="cgst3" oninput="calculateTotal(3)"></td>
+          <td><span id="total3"></span></td>
+        </tr>
+        <tr>
+          <td><input type="number" id="rate4" oninput="calculateTotal(4)"></td>
+          <td><input type="number" id="quantity4" oninput="calculateTotal(4)"></td>
+          <td><input type="number" id="sgst4" oninput="calculateTotal(4)"></td>
+          <td><input type="number" id="cgst4" oninput="calculateTotal(4)"></td>
+          <td><span id="total4"></span></td>
+        </tr>
+       
+        <!-- Add more rows as needed -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Grand Total:</td>
+          <td><span oninput="updateGrandTotal()" id="grandTotal"></span></td>
+        </tr>
+      </table>
     <script src="./index.js"></script>
 </body>
 

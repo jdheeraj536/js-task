@@ -59,3 +59,53 @@ const slideImage =() =>{
     )
 }
 
+
+/*--------------------Table--------------*/
+function calculateTotal(row) {
+    const rate = document.getElementById(`rate${row}`).value;
+    const quantity = document.getElementById(`quantity${row}`).value;
+    const sgst = document.getElementById(`sgst${row}`).value;
+    const cgst = document.getElementById(`cgst${row}`).value;
+    const total = (rate * quantity) + (rate * quantity) * (sgst + cgst);
+    document.getElementById(`total${row}`).innerHTML = total;
+    updateGrandTotal();
+  }
+
+  function updateGrandTotal() {
+    let grandTotal = 0;
+    for (let i = 1; i <= 4; i++) {
+      const total = document.getElementById(`total${i}`).innerHTML;
+      grandTotal += parseFloat(total) || 0;
+    }
+    document.getElementById("grandTotal").innerHTML = grandTotal;
+  }
+
+
+  function calculateTotal(row) {
+    const rate = document.getElementById(`rate${row}`).value;
+    const quantity = document.getElementById(`quantity${row}`).value;
+    const sgst = document.getElementById(`sgst${row}`).value;
+    const cgst = document.getElementById(`cgst${row}`).value;
+    const total = (rate * quantity) + (rate * quantity) * (sgst + cgst);
+    document.getElementById(`total${row}`).innerHTML = total;
+    updateGrandTotal();
+  }
+  function calculateTotal(row) {
+    const rate = document.getElementById(`rate${row}`).value;
+    const quantity = document.getElementById(`quantity${row}`).value;
+    const sgst = document.getElementById(`sgst${row}`).value;
+    const cgst = document.getElementById(`cgst${row}`).value;
+    const total = (rate * quantity) + (rate * quantity) * (sgst + cgst);
+    document.getElementById(`total${row}`).innerHTML = total;
+    updateGrandTotal();
+  }
+  function calculateTotal(row) {
+    const rate = document.getElementById(`rate${row}`).value;
+    const quantity = document.getElementById(`quantity${row}`).value;
+    const sgst = document.getElementById(`sgst${row}`).value;
+    const cgst = document.getElementById(`cgst${row}`).value;
+    const total = (rate * quantity) + (rate * quantity) * (sgst + cgst);
+    document.getElementById(`total${row}`).innerHTML = total;
+    updateGrandTotal();
+  }
+  

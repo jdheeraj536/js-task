@@ -50,3 +50,22 @@ position: relative;
 left: 15%;
 top: 10px;
 }
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+   margin-top: 80px;
+   text-align: center;
+}
+th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 150px;
+}
+tr{
+    width: 500px;
+    text-align: center;
+}
+td{
+    text-align: center;
+}
